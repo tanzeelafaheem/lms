@@ -8,7 +8,7 @@ import { AppContext } from '../../context/AppContext';
 const Navbar = () => {
   const [user, setUser] = useState(null);
   const isCourseListPage = window.location.pathname.includes('/course-list');
-  const navigate=useContext(AppContext);
+  const {navigate,isEducator}=useContext(AppContext);
 
   // 🔹 Track login status
   useEffect(() => {
@@ -42,7 +42,7 @@ const Navbar = () => {
   return (
     <div
       className={`flex items-center justify-between px-4 sm:px-10 md:px-14 lg:px-36 border-b border-gray-500 py-4 
-      ${isCourseListPage ? 'bg-gray-100' : 'bg-orange-200'}`}
+      ${isCourseListPage ? 'bg-yellow-100' : 'bg-yellow-200'}`}
     >
       {/* 🔸 Logo */}
       <Link to='/'>
@@ -55,7 +55,7 @@ const Navbar = () => {
   <div className='hidden md:flex items-center gap-5 text-gray-700'>
     {/* Navigation Links */}
     <div className='flex items-center gap-5'>
-      <button>Become Educator</button> | 
+      <button>{isEducator ? "Educator Dashboard" : "Become Educator" }</button>|{" "}
       <Link to='/my-enrollments'>My Enrollments</Link>
     </div>
 

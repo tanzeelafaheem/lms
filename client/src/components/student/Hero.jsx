@@ -3,7 +3,7 @@ import { assets } from '../../assets/assets'
 
 const Hero = () => {
   return (
-    <div className='flex flex-col items-center justify-center w-full md:pt-36 pt-20 px-7 md:px-0 space-y-7 text-center bg-gradient-to-b from-orange-300/100 to-white'>
+    <div className='flex flex-col items-center justify-center w-full md:pt-36 pt-20 px-7 md:px-0 space-y-7 text-center bg-gradient-to-b from-yellow-300/100 to-white'>
       
       <h1 className='md:text-6xl text-3xl relative font-extrabold text-gray-900 max-w-3xl mx-auto leading-tight drop-shadow-md'>
         Empower your future with courses designed{' '}
