@@ -1,12 +1,14 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 import { assets } from '../../assets/assets';
 import { Link } from 'react-router-dom';
 import { auth, provider } from '../../firebase';
 import { signInWithPopup, signOut, onAuthStateChanged } from 'firebase/auth';
+import { AppContext } from '../../context/AppContext';
 
 const Navbar = () => {
   const [user, setUser] = useState(null);
   const isCourseListPage = window.location.pathname.includes('/course-list');
+  const navigate=useContext(AppContext);
 
   // 🔹 Track login status
   useEffect(() => {
@@ -44,7 +46,8 @@ const Navbar = () => {
     >
       {/* 🔸 Logo */}
       <Link to='/'>
-        <img src={assets.logo} alt='Logo' className='w-28 lg:w-32 cursor-pointer' />
+        <img onClick= {()=> navigate('/')}
+        src={assets.logo} alt='Logo' className='w-28 lg:w-32 cursor-pointer' />
       </Link>
 
       {/* 🔸 Desktop Navigation */}
