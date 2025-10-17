@@ -4,7 +4,7 @@ import { initializeApp } from "firebase/app";
 import { getAuth, GoogleAuthProvider } from "firebase/auth";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCPx_k5fymPBX49Mv8Sb5gzxXXNORtpBxk",
+  apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
   authDomain: "lms-app-7f257.firebaseapp.com",
   projectId: "lms-app-7f257",
   storageBucket: "lms-app-7f257.firebasestorage.app",
