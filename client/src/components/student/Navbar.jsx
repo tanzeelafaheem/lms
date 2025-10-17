@@ -41,8 +41,8 @@ const Navbar = () => {
 
   return (
     <div
-      className={`flex items-center justify-between px-4 sm:px-10 md:px-14 lg:px-36 border-b border-gray-500 py-4 
-      ${isCourseListPage ? 'bg-yellow-100' : 'bg-yellow-200'}`}
+      className={`flex items-center justify-between px-4 sm:px-10 md:px-14 lg:px-36  py-4 
+      ${isCourseListPage ? 'bg-orange-200' : 'bg-yellow-200'}`}
     >
       {/* 🔸 Logo */}
       <Link to='/'>
@@ -69,7 +69,7 @@ const Navbar = () => {
       <span className='text-gray-800 font-medium'>{user.displayName}</span>
       <button
         onClick={handleLogout}
-        className='bg-red-600 text-white px-5 py-2 rounded-full hover:bg-red-700 transition'
+        className='bg-orange-600 text-white px-5 py-2 rounded-full hover:bg-red-600 transition cursor-pointer'
       >
         Logout
       </button>

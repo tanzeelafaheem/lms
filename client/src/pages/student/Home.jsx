@@ -3,6 +3,7 @@ import Hero from '../../components/student/Hero'
 import Companies from './Companies'
 import CoursesSection from '../../components/student/CoursesSection'
 import CallToAction from '../../components/student/CalltoAction'
+import Loading from './Loading'
 
 const Home = () => {
   return (
