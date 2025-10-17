@@ -50,6 +50,7 @@ const Player = () => {
 		}
 		
 	} catch (error) {
+    console.error("Error in submitting rating:", error);
 		toast.error(error.message)
 	}
   }
