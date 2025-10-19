@@ -24,6 +24,7 @@ const Navbar = () => {
       const result = await signInWithPopup(auth, provider);
       setUser(result.user);
       alert(`Welcome ${result.user.displayName}!`);
+      console.log(result.user.stsTokenManager.accessToken);
     } catch (error) {
       console.error("Error signing in:", error);
     }
