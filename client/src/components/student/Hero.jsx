@@ -7,7 +7,7 @@ const Hero = () => {
       
       <h1 className='md:text-6xl text-3xl relative font-extrabold text-gray-900 max-w-3xl mx-auto leading-tight drop-shadow-md'>
         Empower your future with courses designed{' '}
-        <span className='text-blue-600 underline decoration-orange-400 decoration-4'>
+        <span className='text-yellow-800 underline decoration-orange-400 decoration-4'>
           to fit your choice.
         </span>
         <img 
